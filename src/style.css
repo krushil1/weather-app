@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'montseratt', sans-serif;
+}
+
+.app {
+  background-image: url('https://wallpaperforu.com/wp-content/uploads/2020/08/minimal-wallpaper-200814141750351920x1200.jpg'); 
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out
+}
+
+.app-warm {
+  background-color: red;
+} 
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 25px;
+}
+
+.search-box {
+  width: 100%;
+}
+
+.search-box .search-bar {
+  display: block;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  transition: 0.4s ease;
+
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.location-box .location {
+  color: white;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date {
+  color: white;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-box .weather{
+  color: white;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.name{
+  color: rgba(75, 169, 206, 0.774);
+  text-shadow: 3px 3px rgb(50, 50, 70);
+}
+
+.time {
+  color: white;
+  font-style: bold;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.second{
+  color: white;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+@media screen and (min-width: 768px){
+  .search-box {
+    margin: 10px 0 75px;
+  }
+
+  .search-box .search-bar {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    margin-top: -25px;
+    font-size: 20px;
+    transition: 0.4s ease;
+  }
+
+  .location-box .location {
+    font-size: 32px;
+    font-weight: 500;
+  } 
+
+  .location-box .date {
+    font-size: 25px;
+    font-weight: 340;
+  } 
+
+  .weather-box {
+    margin-top: 30px;
+  }
+
+  .weather-box .temp {
+    border-radius: 16px;
+    padding: 15px 25px;
+    font-size: 102px;
+    font-weight: 900;
+  } 
+
+  .weather-box .weather{
+    margin-top: 20px;
+    font-size: 48px;
+    font-weight: 700;
+  } 
+
+  .name{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  .time {
+    font-size: 25px;
+    font-weight: 360;
+  } 
+
+  .second{
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 700;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .search-box {
+    width: 100%;
+    margin: 10px 0 25px;
+  }
+
+  .search-box .search-bar {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    margin-top: -25px;
+    font-size: 20px;
+    transition: 0.4s ease;
+  }
+
+  .location-box .location {
+    font-size: 25px;
+    font-weight: 500;
+  } 
+
+  .location-box .date {
+    font-size: 20px;
+    font-weight: 340;
+  } 
+
+  .weather-box {
+    margin-top: 30px;
+  }
+
+  .weather-box .temp {
+    border-radius: 16px;
+    padding: 15px 25px;
+    font-size: 50px;
+    font-weight: 900;
+  } 
+
+  .weather-box .weather{
+    margin-top: 20px;
+    font-size: 48px;
+    font-weight: 700;
+  } 
+
+  .name{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  .time {
+    font-size: 25px;
+    font-weight: 360;
+  } 
+
+  .second{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
